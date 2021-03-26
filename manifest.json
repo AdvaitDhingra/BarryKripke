@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "The Barry Kripke Extension",
+    "description": "If Barry Kripke wrote the Internet",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "kripke.jpg",
+        "48": "kripke.jpg",
+        "128": "kripke.jpg"
+    }
+}
